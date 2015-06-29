@@ -1,0 +1,5 @@
+p <- ggplot(mtcars, aes(x = wt, y=mpg)) + geom_point()
+p + geom_hline(yintercept=c(10,15,20,25,30))  #can run
+p + geom_hline(aes(yintercept=c(10,15,20,25))) #can run
+p + geom_hline(aes(yintercept=c(10,15,20,25,30))) #report wrong
+#is line 4 bug?
